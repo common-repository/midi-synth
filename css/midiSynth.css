@@ -1,0 +1,189 @@
+/**
+ * Description: CSS version for Synthesizer.
+ *
+ * @package     midi-Synth
+ * @category    module css
+ * @author      Oleg Klenitsky
+ * @copyright   2024 Oleg Klenitsky
+ * @license     GPL-2.0-or-later
+ */
+
+.btn_sequencer {
+  font-size: 12px;
+  height: 20px;
+  width: 65px;
+  display: inline-block;
+  flex-basis: 90%;
+  border: 1px solid transparent;
+  padding: 0 !important;
+  margin: 2px 5px;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: unset;
+  background-color: #767676 !important;
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+.btn_sequencer:hover {
+  background-color: #A5A39D;
+  cursor: pointer;
+}
+.btn_sequencer:active {
+  box-shadow: inset -2px -2px 3px rgba(200, 200, 200, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+.btn_sequencer:disabled {
+  opacity: 0.7;
+}
+#appearance {
+  position:relative;
+  background-image: url('/wp-content/plugins/midi-synth/img-ctrl/bg1.png');
+  background-repeat: no-repeat;
+  width:985px;
+  height:275px;
+  margin:0;
+  padding:0px;
+
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.midi_container {
+  display: flex;
+  flex-direction: column;
+  width: 1000px !important;
+  max-width: 1000px !important;
+  padding:0;
+  margin:10px auto;
+}
+#inform_panel{
+  border: black 1px solid;
+  border-radius: 3px;
+  box-shadow: inset 0 2px 10px 1px rgba(0, 0, 0, .3), inset 0 0 0 60px rgba(0, 0, 0, .3), 0 1px rgba(255, 255, 255, .08);
+  background: linear-gradient(rgb(70, 70, 70), rgb(120, 120, 120));
+  color: #ccc;
+  padding: 0;
+  margin: 2px 2px 2px 0;
+  height: 30px;
+  width: 250px;
+  font-size: 14px;
+}
+#sel_kbd{
+  font-size:14px;
+  margin:10px 0 30px 0;
+  width: fit-content;
+}
+#oscs {
+  margin-left: 18px;
+  background-color: white;
+}
+#head_soundeditor {
+  width: 500px;
+  display: inline-block;
+  font-size:14px;
+  text-align: center;
+}
+#soundeditor {
+  font-size:12px;
+  width:720px;
+  margin: 0 0 5px 5px;
+  background-color: #E3E3E3;
+}
+#soundeditor td {
+  padding:1px;
+}
+#soundeditor th {
+  padding:1px;
+  cursor: pointer;
+}
+#audiograph {
+  display: none;
+  width: fit-content;
+  border: 1px solid #A0A378;
+  margin-left:5px;
+  background-color: #E3E3E3;
+}
+#file_mid {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+#file_mid + label {
+  width: 65px;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #A0A378;
+  border-radius: 5px;
+  border: 1px solid #A0A378;
+  background-color: black;
+}
+#sequencer {
+  width: 70px;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #A0A378;
+  border-radius: 5px;
+  border: 1px solid #A0A378;
+  background-color: black;
+}
+#editor, #graph {
+  width: 50px;
+  margin-right: 8px;
+  font-size: 14px;
+  color: #A0A378;
+  border-radius: 5px;
+  border: 1px solid #A0A378;
+  background-color: black;
+}
+#kbdBtn {
+  width: 40px;
+  margin-right: 8px;
+  font-size: 14px;
+  color: #A0A378;
+  border-radius: 5px;
+  border: 1px solid #A0A378;
+  background-color: black;
+}
+#shot {
+  width: 40px;
+  margin-right: 8px;
+  font-size: 14px;
+  color: #A0A378;
+  border-radius: 5px;
+  border: 1px solid #A0A378;
+  background-color: black;
+}
+#btns_osc {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 18px;
+  width: 187px;
+  top:20px;
+  left:24px;
+  border: 1px solid #878965;
+  background-color: black;
+}
+#sw0, #sw1, #sw2, #sw3, #sw4 {
+  display: flex;
+  height:15px;
+  float:left;
+}
+#btns_osc p {
+  margin:0;
+  font-size:10px;
+  font-weight: bold;
+  color:#A0A378;
+  cursor: pointer;
+}
+/* animation for oscillograph in mode - on*/
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+/* midi keyboard */
+#kbd {
+  margin: 5px;
+}
